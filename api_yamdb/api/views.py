@@ -1,3 +1,8 @@
+from api.filters import TitlesFilter
+from api.permissions import AdminModeratorAuthorOrReadOnly, AdminOrReadOnly
+from api.serializers import (CategorySerializer, CommentSerializer,
+                             GenreSerializer, ReviewSerializer,
+                             TitleSerializer, TitleSerializerGET)
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
@@ -5,20 +10,7 @@ from rest_framework import mixins, status, viewsets
 from rest_framework.filters import SearchFilter
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
-
-from api.filters import TitlesFilter
-from api.permissions import AdminModeratorAuthorOrReadOnly
-from api.permissions import AdminOrReadOnly
-from api.serializers import CategorySerializer
-from api.serializers import CommentSerializer
-from api.serializers import GenreSerializer
-from api.serializers import ReviewSerializer
-from api.serializers import TitleSerializer
-from api.serializers import TitleSerializerGET
-from reviews.models import Category
-from reviews.models import Genre
-from reviews.models import Review
-from reviews.models import Title
+from reviews.models import Category, Genre, Review, Title
 
 
 class ReviewViewSet(viewsets.ModelViewSet):

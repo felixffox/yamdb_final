@@ -7,8 +7,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 
 from .models import User
 from .permissions import RoleAdmin
-from .serializers import UserSerializer
-from .serializers import UsersByAdminSerializer
+from .serializers import UsersByAdminSerializer, UserSerializer
 
 
 class MeViewSet(mixins.RetrieveModelMixin, viewsets.GenericViewSet):

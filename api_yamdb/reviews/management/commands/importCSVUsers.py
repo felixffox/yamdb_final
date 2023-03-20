@@ -1,7 +1,6 @@
 from csv import reader
 
 from django.core.management import BaseCommand
-
 from users.models import User
 
 
