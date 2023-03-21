@@ -1,5 +1,5 @@
 # yamdb_final
-![yamdb_workflow](https://github.com/felixffox/yamdb_final/workflows/yamdb_workflow/badge.svg)
+![yamdb_workflow](https://github.com/felixffox/yamdb_final/.github/workflows/yamdb_workflow/badge.svg)
 
 # API_YAMDB
 REST API проект для сервиса YaMDb — сбор отзывов о фильмах, книгах или музыке.
